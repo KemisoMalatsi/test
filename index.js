@@ -40,7 +40,11 @@ const addNewGoal = () => {
     newGoal.textContent = goalInput;
     goalList.appendChild(newGoal);
 };
-
+    
+const newGoal = document.createElement('li');
+newGoal.textContent = goalInput;
+goalList.appendChild(newGoal);
+};
 // Add event listener to the goal submit button
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
 
